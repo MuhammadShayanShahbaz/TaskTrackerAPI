@@ -1,0 +1,27 @@
+### Create a new Task
+POST https://localhost:7090/api/task
+Content-Type: application/json
+
+{
+  "projectID": 1,
+  "taskTitle": "Setup NorthBay API",
+  "status": "Pending"
+}
+
+###
+
+### Update an existing Task
+PUT https://localhost:7090/api/task/1
+Content-Type: application/json
+
+{
+  "taskID": 1,
+  "projectID": 1,
+  "taskTitle": "Setup NorthBay API (Updated!)",
+  "status": "Completed"
+}
+
+###
+
+### Delete a Task
+DELETE https://localhost:7090/api/task/1
